@@ -68,6 +68,7 @@
 
 ## 📰 News
 
+<!-- - **[2025-02-10] 🎉🎉🎉 [Technical Report](./Lumina Video Report V1.pdf) is released! 🎉🎉🎉** -->
 <!-- - **[2025-02-09] 🎉🎉🎉 [Training codes and documents](./lumina_mgpt/TRAIN.md) are released! 🎉🎉🎉** -->
 
 - **[2025-02-09] 🎉🎉🎉 Lumina-Video is released! 🎉🎉🎉**
