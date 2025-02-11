@@ -12,6 +12,34 @@
  <br>
 </p>
 
+```bash
+sudo apt-get update && sudo apt-get install git-lfs ffmpeg cbm
+
+conda create --name py310 python=3.10
+conda activate py310
+pip install ipykernel
+python -m ipykernel install --user --name py310 --display-name "py310"
+
+git clone https://github.com/svjack/Lumina-Video && cd Lumina-Video
+pip install -r requirements.txt
+pip install imageio flash_attn
+
+huggingface-cli download --resume-download Alpha-VLLM/Lumina-Video-f24R960 --local-dir ./ckpts/f24R960
+
+huggingface-cli login
+
+# Example for generatingan video with 4s duration, fps=24, resolution=1248x704
+python -u generate.py \
+    --ckpt ./ckpts/f24R960 \
+    --resolution 1248x704 \
+    --fps 24 \
+    --frames 96 \
+    --prompt "Joseon Taizong is captured mid-action, drawing a bow with intense focus. He wears a traditional red Korean hanbok adorned with intricate dragon designs, and a black hat with a white circular emblem. The background features a colorful tent with green and red patterns, and the sunlight filters through, casting a warm glow. Two other figures, one partially visible, are dressed in similar traditional attire." \
+    --neg_prompt "" \
+    --sample_config f24F96R960  # set to "f24F96R960-MultiScale" for efficient multi-scale inference
+```
+
+
 <h2 id="custom-gallery"> 📽️ Gallery</h2>
 
 ### Text to Video results
