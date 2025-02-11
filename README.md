@@ -14,7 +14,7 @@
 
 <h2 id="custom-gallery"> 📽️ Gallery</h2>
 
-### Text to video results
+### Text to Video results
 
 <table border="0" style="width: 100%; text-align: center; margin-top: 1px;">
   <tr>
@@ -39,7 +39,7 @@
   </tr>
 </table>
 
-### Text to video+audio results
+### Text to Video+Audio results
 
 <table border="0" style="width: 100%; text-align: left; margin-top: 15px; border-collapse: collapse;">
   <tr>
